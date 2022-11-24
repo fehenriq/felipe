@@ -27,13 +27,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 35px;
+  gap: 20px;
   padding-top: 30px;
 }
 
 img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   box-shadow: 1px 1px 1px 1px var(--second-color);
 }
@@ -41,8 +41,8 @@ img {
 .item {
   width: 60%;
   text-align: center;
-  padding: 20px;
-  font-size: 30px;
+  padding: 10px;
+  font-size: 25px;
   border: 2px solid var(--second-color);
   border-radius: 50px;
   text-decoration: none;
