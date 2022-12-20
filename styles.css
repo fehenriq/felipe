@@ -35,15 +35,14 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 1px 1px 1px 1px var(--second-color);
 }
 
 .item {
-  width: 60%;
+  width: 25%;
   text-align: center;
   padding: 10px;
-  font-size: 25px;
-  border: 2px solid var(--second-color);
+  font-size: 20px;
+  border: 1px solid var(--second-color);
   border-radius: 50px;
   text-decoration: none;
   color: var(--second-color);
@@ -63,19 +62,20 @@ p {
   color: var(--second-color);
 }
 
+.rodape {
+  margin-top: 20px;
+}
+
 @media (max-width: 576px) {
   .container {
     padding-top: 20px;
-    gap: 20px;
   }
 
   .item {
-    padding: 10px;
-    font-size: 20px;
+    width: 50%;
   }
-
+  
   .rodape {
-    margin-top: 20px;
     font-size: 14px;
   }
 }
