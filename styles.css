@@ -8,15 +8,12 @@
   margin: 0;
   padding: 0;
   background-color: var(--first-color);
-  animation: color 9s infinite;
+  animation: color 6s infinite;
 }
 
 @keyframes color {
   0%   { background: var(--first-color); }
-  20%  { background: var(--third-color); }
-  40%  { background: var(--first-color); }
-  60%  { background: var(--third-color); }
-  80%  { background: var(--first-color); }
+  50%  { background: var(--third-color); }
   100%  { background: var(--first-color); }
 }
 
@@ -32,9 +29,8 @@
 }
 
 img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+  width: 250px;
+  height: 250px;
 }
 
 .item {
