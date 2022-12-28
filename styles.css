@@ -4,9 +4,7 @@
   --third-color: #006936;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+body {
   background-color: var(--first-color);
   animation: color 6s infinite;
 }
@@ -31,6 +29,19 @@
 img {
   width: 250px;
   height: 250px;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img:hover {
+  animation: girar 2.5s linear infinite;
 }
 
 .item {
