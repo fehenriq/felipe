@@ -5,14 +5,7 @@
 }
 
 body {
-  background-color: var(--first-color);
-  animation: color 6s infinite;
-}
-
-@keyframes color {
-  0%   { background: var(--first-color); }
-  50%  { background: var(--third-color); }
-  100%  { background: var(--first-color); }
+  background-color: var(--third-color);
 }
 
 .container {
@@ -31,15 +24,6 @@ img {
   height: 250px;
 }
 
-@keyframes girar {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 img:hover {
   animation: girar 2.5s linear infinite;
 }
@@ -48,17 +32,20 @@ img:hover {
   width: 25%;
   text-align: center;
   padding: 10px;
-  font-size: 20px;
-  border: 1px solid var(--second-color);
-  border-radius: 50px;
+  font-size: 19px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
   text-decoration: none;
   color: var(--second-color);
-  transition: 1.5s;
-  box-shadow: 1px 1px 1px 1px var(--second-color);
+  transition: 0.2s;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .container .item:hover {
   scale: 1.1;
+  border: 1.5px solid var(--second-color);
 }
 
 i {
@@ -73,6 +60,75 @@ p {
   margin-top: 20px;
 }
 
+#switch {
+  position: relative;
+  width: 70px;
+}
+
+#switch button {
+  width: 32px;
+  height: 32px;
+  background: white url(./img/moon.svg) no-repeat center;
+  border: 0;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+
+  animation: slide-back 0.2s;
+}
+
+.light #switch button {
+  animation: slide-in 0.2s forwards;
+  background: white url(./img/sun.svg) no-repeat center;
+}
+
+#switch button:hover {
+  outline: 8px solid rgba(255, 255, 255, 0.2);
+}
+
+#switch span {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
+  margin: 0;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
+}
+
 @media (max-width: 576px) {
   .container {
     padding-top: 20px;
@@ -81,7 +137,7 @@ p {
   .item {
     width: 50%;
   }
-  
+
   .rodape {
     font-size: 14px;
   }
