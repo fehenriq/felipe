@@ -2,6 +2,11 @@
   --first-color: #15191c;
   --second-color: #f1f1f1;
   --third-color: #006936;
+  --bg: url(./img/moon.svg);
+}
+
+.light {
+  --bg: url(./img/sun.svg);
 }
 
 body {
@@ -68,7 +73,7 @@ p {
 #switch button {
   width: 32px;
   height: 32px;
-  background: white url(./img/moon.svg) no-repeat center;
+  background: white var(--bg) no-repeat center;
   border: 0;
   border-radius: 50%;
 
@@ -83,7 +88,6 @@ p {
 
 .light #switch button {
   animation: slide-in 0.2s forwards;
-  background: white url(./img/sun.svg) no-repeat center;
 }
 
 #switch button:hover {
