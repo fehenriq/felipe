@@ -8,7 +8,7 @@ setInterval(function () {
   }
 }, 1000);
 
-function toggleMode() {
+function toggleButton() {
   const html = document.documentElement;
   html.classList.toggle("light");
 

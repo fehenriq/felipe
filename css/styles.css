@@ -2,11 +2,11 @@
   --first-color: #15191c;
   --second-color: #f1f1f1;
   --third-color: #006936;
-  --bg: url(./img/moon.svg);
+  --bg: url(../img/moon.svg);
 }
 
 .light {
-  --bg: url(./img/sun.svg);
+  --bg: url(../img/sun.svg);
 }
 
 body {
@@ -20,7 +20,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
   padding-top: 30px;
 }
 
@@ -62,7 +62,7 @@ p {
 }
 
 .rodape {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 #switch {
