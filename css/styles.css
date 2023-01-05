@@ -11,10 +11,10 @@
 
 body {
   background-color: var(--third-color);
+  font-family: 'Source Code Pro', monospace;
 }
 
 .container {
-  font-family: "Courier New", Courier, monospace;
   height: 90vh;
   display: flex;
   flex-direction: column;
